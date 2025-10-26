@@ -32,6 +32,12 @@ for row in X:
     encrypted_data.append(encrypted_row)
 print(f"✅ Encryption done — first {N} features encrypted.")
 
+# === Show encrypted gibberish ===
+print("\n🔒 Example of Encrypted TF-IDF Values (first email, first 5 features):")
+for i, val in enumerate(encrypted_data[0][:5]):
+    print(f"Feature {i+1}: {val}")
+
+
 # Decrypt before prediction
 decrypted_data = []
 for row in encrypted_data:
