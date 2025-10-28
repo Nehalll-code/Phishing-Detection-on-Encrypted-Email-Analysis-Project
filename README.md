@@ -1,30 +1,31 @@
-# Phishing-Detection on Encrypted Email Analysis Project
+# 🛡️ Phishing Detection on Encrypted Emails
 
-## 📌 Project Overview  
-This project implements a pipeline to detect phishing attempts in **encrypted emails** using machine-learning and homomorphic encryption techniques.  
-It includes steps for data cleaning, feature extraction, model training, and a demo of encrypted email interception & classification.
+[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/)
+[![GitHub issues](https://img.shields.io/github/issues/Nehalll-code/Phishing-Detection-on-Encrypted-Email-Analysis-Project)](https://github.com/Nehalll-code/Phishing-Detection-on-Encrypted-Email-Analysis-Project/issues)
 
-## 🧠 Key Features  
-- Data preprocessing: cleaning raw email data, extracting features from content and metadata.  
-- Model training: baseline models (e.g., TF-IDF + classifier) to discriminate phishing vs legitimate emails.  
-- Homomorphic encryption pipeline: demonstration of how email content can be encrypted and still used for classification without decryption.  
-- Real-time demo: Server & client code to simulate encrypted email detection in action.  
-- Full stack components: from data science notebooks to Python scripts & a live server/client setup.
+---
 
-## 📁 Repository Structure  
-- `DataCleaning1.ipynb` — Notebook for email data cleaning and feature engineering.  
-- `BaseLineModel.ipynb` — Notebook demonstrating baseline model implementation.  
-- `homomorphicEncryptionPipeline.py` — Script implementing the encrypted-email model pipeline.  
-- `homomorphicEncryptionDemo.py` — Demo script for encrypted-email inference.  
-- `app.py` / `server.py` / `client.py` — Web/application interface for the system.  
-- `requirements.txt` — Python dependencies.  
-- `*.pkl`, `*.npy` files — Trained model artifacts & vectorizers.  
-- `Cleaned_Phishing_Email.csv`, `cleaned_emails.csv` — Cleaned datasets.  
-- `Phishing_Email.csv` — Original raw data.  
+## 🔍 Project Overview
+This project implements a **privacy-preserving phishing detection system** capable of analyzing **encrypted emails** without decrypting their content. It combines **machine learning**, **TF-IDF vectorization**, and **homomorphic encryption** to detect phishing attacks while keeping user data secure.  
 
-## 🚀 Getting Started  
-### Prerequisites  
-- Python 3.x  
-- Install dependencies:  
-  ```bash
-  pip install -r requirements.txt
+**Key Goals:**
+- Detect phishing attempts in emails **without accessing plaintext**  
+- Demonstrate the feasibility of **encrypted ML pipelines**  
+- Serve as a research & educational tool for **privacy-preserving security analytics**
+
+---
+
+## ⚙️ Tech Stack
+- **Language:** Python 3.11  
+- **Libraries:** `numpy`, `pandas`, `scikit-learn`, `phe`, `joblib`  
+- **Machine Learning:** Logistic Regression (baseline), TF-IDF Vectorization  
+- **Encryption:** Paillier Homomorphic Encryption  
+- **Environment:** Jupyter Notebook for prototyping, Python scripts for deployment  
+
+---
+
+## 🚀 Getting Started
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
