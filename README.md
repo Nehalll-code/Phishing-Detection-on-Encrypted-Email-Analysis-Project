@@ -34,3 +34,26 @@ cd Phishing-Detection-on-Encrypted-Email-Analysis-Project
 
 # Install dependencies
 pip install -r requirements.txt
+
+🏃‍♂️ Usage
+1️⃣ Data Cleaning & Preprocessing
+jupyter notebook DataCleaning1.ipynb
+2️⃣ Train or Load Model
+jupyter notebook BaseLineModel.ipynb
+
+
+Or load pre-trained model:
+
+import joblib
+model = joblib.load("baseline_model.pkl")
+
+3️⃣ Predict Emails
+python predict_emails.py
+
+📦 Dataset
+
+Source: Provided CSV files (Phishing_Email.csv)
+
+Content: Raw email texts labeled as phishing or legitimate
+
+Usage: Preprocess using DataCleaning1.ipynb before training/testing
